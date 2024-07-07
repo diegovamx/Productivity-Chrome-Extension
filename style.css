@@ -1,0 +1,151 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    min-width: 300px;
+    min-height: 400px;
+}
+
+#extension-container {
+    display: none;
+}
+
+#title-el {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0rem;
+    color:#000;
+}
+#tasks-container {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#input-el {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    font-size: 1.25rem;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+#buttons-container button {
+    margin: 0.5rem 0.75rem 0 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+}
+#save-btn {
+    background-color: #04ba04;
+}
+#clear-btn {
+    background-color: #e60202;
+}
+#tasks-el {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 0.1rem;
+    margin: 0.5rem;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0rem;
+    vertical-align: middle;
+    position: relative;
+}
+#tasks-el input:hover {
+    cursor: pointer;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    transform: scale(0);
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+input[type="checkbox"]:hover::before {
+    transform: scale(0.75);
+    transition: 0.15s;
+    cursor: pointer;
+
+}
+  
+#empty-alert {
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    font-style: italic;
+}
+#initial-task {
+    font-style: italic;
+    color: #000000aa;
+}
+
+#name-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#name-container input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 1.25rem;
+    border: 2px solid #000;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+#name-container h1 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #000;
+
+}
+#name-container h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #000;
+
+}
+
+#name-btn {
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    background-color: #0066ff;
+}

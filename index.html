@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Productivity Extension</title>
+</head>
+<body>
+    <div id="name-container">
+        <h1>Welcome! 👋</h1>
+        <h2>What is your name?</h2>
+        <input type="text" id="name-input" placeholder="Enter Name">
+        <button id="name-btn">Submit</button>
+    </div>
+
+    <div id="extension-container">
+        <h1 id="title-el"></h1> 
+        <!-- insert user's name after -->
+        <div id="tasks-container">
+            <ul id="tasks-el">  
+                <li id="initial-task">
+                    <label>
+                        <input type="checkbox"> Example Task
+                    </label>  
+                </li>
+            </ul>
+            <input type="text" id="input-el" placeholder="Add New Task...">
+        </div>
+        <div id="buttons-container">            
+            <button id="save-btn">Add</button>
+            <button id="clear-btn">Clear</button>
+        </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+</html>
